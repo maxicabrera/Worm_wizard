@@ -81,10 +81,6 @@
         </div>
           <form class="form-brand" abide novalidate>
       	
-      	<div data-abide-error class="alert callout" style="display: none;">
-      	 	<p><i class="fi-alert"></i> There are some errors in your form.</p>
-      	</div>
-      
       	<div class="section_form_container">
       		<div class="section_campaign-details active">
       		
@@ -237,7 +233,8 @@
       		    <div class="columns small-9">
       		      <h4 class="sub">age</h4>
       		      <!-- <input type="range" name="" value="" placeholder=""> -->
-      		      <input type="hidden" class="slider-input" value="23" />
+      		      <input type="hidden" class="slider-input" name="age_range" value="0" />
+      		      <input type="hidden" class="slider-input" name="age_to" value="100" />
       		      <div class="range-slider"></div>
       		    </div>
       		  </div>
@@ -411,24 +408,28 @@
       		        <div class="visual-examples_item">
       		          <input class="visual-example-file inputfile" type="file">
       		          <img class="visual-example-preview" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden">
       		          <div class="magnifiyng"></div>
       		        </div>
       		        
       		        <div class="visual-examples_item">
       		          <input class="visual-example-file inputfile" type="file">
       		          <img class="visual-example-preview" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden">
       		          <div class="magnifiyng"></div>
       		        </div>
       		        
       		        <div class="visual-examples_item">
       		          <input class="visual-example-file inputfile" type="file">
       		          <img class="visual-example-preview" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden">
       		          <div class="magnifiyng"></div>
       		        </div>
       		        
       		        <div class="visual-examples_item">
       		          <input class="visual-example-file inputfile" type="file">
-      		          <img class="visual-example-preview" src="assets/img/placeholder.png" height="200" alt="Image preview..."> 
+      		          <img class="visual-example-preview" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden">
       		          <div class="magnifiyng"></div>
       		        </div>
       		      </div>
@@ -459,6 +460,7 @@
       		    </div>
       		    <div class="column small-12">
       		      <input data-toggle="datepicker">
+      		      <input type="hidden" name="request_submit_date">
       		    </div>
       		  </div>
       		
@@ -471,50 +473,51 @@
       		      <h4 class="sub">Dates</h4>
       		    </div>
       		
-      		    <div class="column small-12">
+      		    <div class="column small-12" id="daysData">
       		      
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="mon" checked>
+      		        <input type="checkbox" name="choose" id="mon" data-pos="0" checked>
       		        <label for="mon"></label>
       		        <div class="help">mon</div>
       		      </div>
       		
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="tue">
+      		        <input type="checkbox" name="choose" id="tue" data-pos="1">
       		        <label for="tue"></label>
       		        <div class="help">tue</div>
       		      </div>
       		
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="wed">
+      		        <input type="checkbox" name="choose" id="wed" data-pos="2">
       		        <label for="wed"></label>
       		        <div class="help">wed</div>
       		      </div>
       		
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="thu">
+      		        <input type="checkbox" name="choose" id="thu" data-pos="3">
       		        <label for="thu"></label>
       		        <div class="help">thu</div>
       		      </div>
       		
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="fri">
+      		        <input type="checkbox" name="choose" id="fri" data-pos="4">
       		        <label for="fri"></label>
       		        <div class="help">fri</div>
       		      </div>
       		
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="sat">
+      		        <input type="checkbox" name="choose" id="sat" data-pos="5">
       		        <label for="sat"></label>
       		        <div class="help">sat</div>
       		      </div>
       		
       		      <div class="radio-container">
-      		        <input type="checkbox" name="choose" id="sun">
+      		        <input type="checkbox" name="choose" id="sun" data-pos="6">
       		        <label for="sun"></label>
       		        <div class="help">sun</div>
       		      </div>
-      		          
+      		      
+      		      <input type="hidden" name="days_data">
       		    </div>
       		  </div>
       		
