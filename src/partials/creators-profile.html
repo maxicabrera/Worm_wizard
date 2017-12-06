@@ -1,0 +1,169 @@
+<div class="section_creators-profile">
+  <div class="row padding-min creators__profile">
+    <div class="columns small-12 padding--min">
+      <h4>creators profile</h4>
+    </div>
+
+    <div class="columns small-3">
+      <h4 class="sub">gender</h4>
+      <div class="gender">
+        <div class="male-selection active">
+          <div class="overlay"></div>
+          <img src="assets/img/male.png" alt="male">
+        </div>
+        <div class="female-selection">
+          <div class="overlay"></div>
+          <img src="assets/img/female.png" alt="female">
+        </div>
+        <div class="female-selection">
+          <div class="overlay"></div>
+          <img src="assets/img/trans.png" alt="trans">
+        </div>
+
+        <input id="ch-gender" type="hidden" name="" value="">
+      </div>
+    </div>
+
+    <div class="columns small-9">
+      <h4 class="sub">age</h4>
+      <!-- <input type="range" name="" value="" placeholder=""> -->
+      <input type="hidden" class="slider-input" value="23" />
+      <div class="range-slider"></div>
+    </div>
+  </div>
+
+  <div class="row padding-min creators__category" data-equalizer>
+    <div class="columns small-12 padding--min">
+      <h4>creators category</h4>
+    </div>
+
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Fashion & <br> Beauty</h6>
+        <div class="img-container">
+          <div class="selected"></div>
+          <img src="assets/img/1.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catFashion" value="catFashion">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Food & <br>  Drinks</h6>
+        <div class="img-container">
+          <div class="selected"></div>
+          <img src="assets/img/2.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catDrinks" value="catDrinks">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Health & <br>  Fitness</h6>
+        <div class="img-container alt">
+          <div class="selected"></div>
+          <img src="assets/img/3.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catHealth" value="catHealth">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Lifestyle</h6>
+        <div class="img-container alt">
+          <div class="selected"></div>
+          <img src="assets/img/4.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catLife" value="catLife">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Travel</h6>
+        <div class="img-container">
+          <div class="selected"></div>
+          <img src="assets/img/5.png" alt="">
+        </div>
+      </div>
+       <input type="checkbox" name="catTravel" value="catTravel">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Sports</h6>
+        <div class="img-container alt">
+          <div class="selected"></div>
+          <img src="assets/img/6.png" alt="">
+        </div>
+      </div>
+       <input type="checkbox" name="catSports" value="catSports">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Gamming</h6>
+        <div class="img-container">
+          <div class="selected"></div>
+          <img src="assets/img/7.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catGaming" value="catGaming">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Home decor <br>  design</h6>
+        <div class="img-container">
+          <div class="selected"></div>
+          <img src="assets/img/8.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catHome" value="catHome">
+    </div>
+    
+    <div class="columns small-4 large-3 creators__category-container last" data-equalizer-watch>
+      <div class="category-item">
+        <h6>Other</h6>
+        <div class="img-container">
+          <div class="selected"></div>
+          <img src="assets/img/9.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" name="catOther" value="catOther">
+    </div>
+  </div>
+
+  <div class="row padding-min creators__req">
+    <div class="columns small-12 padding--min">
+
+      <h4>creators requirements</h4>
+      <textarea class="" name="requirements" id="" placeholder="Describe your ideal content creator profile..." cols="30" rows="10" required></textarea>
+    </div>
+  </div>
+
+  <div class="row creators__find-perfect">
+    <div class="columns small-6">
+      <div class="find-the-perfect">
+        <input type="radio" name="xh" id="find-the-perfect" checked="">
+        <label for="find-the-perfect"></label>
+        <div class="help">Please find the perfect creator for my campaign</div>
+      </div>
+    </div>
+
+    <div class="columns small-6">
+      <div class="find-the-perfect">
+        <input type="radio" name="xh" id="let-me-approve">
+        <label for="let-me-approve"></label>
+        <div class="help">Let me approve my own creators</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_button_container">
+    {{> button_next}}  
+  </div>
+</div>

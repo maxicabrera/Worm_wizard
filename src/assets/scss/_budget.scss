@@ -1,0 +1,8 @@
+.section_budget{
+	display: none;
+	margin-bottom: rem-calc(30);
+
+	&.active{
+		display: block;
+	}
+}
