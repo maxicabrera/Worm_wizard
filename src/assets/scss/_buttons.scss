@@ -1,0 +1,20 @@
+.section_button{
+	.btn-container{
+		display: inline-block;
+		margin-right: rem-calc(16);
+		font-weight: 600;
+		text-transform: uppercase;
+
+		.save{
+			vertical-align: top;
+			font-size: rem-calc(14);
+			text-transform: uppercase;
+			color: $black;
+			text-decoration: underline;
+		}
+
+		.button{
+			font-size: rem-calc(12);
+		}
+	}
+}

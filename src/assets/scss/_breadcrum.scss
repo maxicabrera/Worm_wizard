@@ -1,0 +1,34 @@
+#breadcrum{
+	.root{
+		.root-item{
+			display: inline-block;
+			vertical-align: middle;
+
+			a {
+				font-size: rem-calc(14);
+				font-weight: 300;
+				color: $dark-gray;
+			}
+
+			&.active{
+				position: relative;
+				text-decoration: underline;
+				padding-left: rem-calc(16);
+
+				a {
+					cursor: default;
+				}
+
+				&:before{
+					content: ">";
+					position: absolute;
+					top: 4px;
+					left: 0;
+					padding-left: rem-calc(4);
+					font-size: rem-calc(12);
+					color: $light-gray;
+				}
+			}
+		}
+	}
+}
