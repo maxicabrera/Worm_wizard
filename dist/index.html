@@ -1,0 +1,617 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a campaign</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet"> 
+    
+  </head>
+  <body>
+
+    <div class="container" role="main">
+      
+      <div class="row padding--min" id="breadcrum">
+        <div class="columns small-12">
+          <div class="root">
+            <div class="root-item">
+              <a href="../socialcampaign/index.php/admin">Dashboard</a>
+            </div>
+            <div class="root-item active">
+              <a href="#">New product release</a>
+            </div>
+          </div>
+        </div>
+      </div>    <!-- Page title change according the wizard step display -->
+        <div class="row padding--min" id="pageTitle">
+          <div class="columns small-12">
+            <div class="title-container">
+              <h5>Create Campaign</h5>
+            </div>
+          </div>
+        </div>    <div class="row padding-min" id="WizardStepOne">
+          <div class="columns small-12">
+            <div class="wizard-step">
+              <ul class="wizard-step_list">
+                <li class="active">
+                  <div class="mark-container">
+                    <div class="mark">
+                      <span>1</span>
+                    </div>
+                    <h6>Campaign details</h6>
+                  </div>
+                  
+                </li>
+      
+                <li>
+                  <div class="mark-container">
+                    <div class="mark">
+                      <span>2</span>
+                    </div>
+                    <h6>Creators profile</h6>
+                  </div>
+                </li>
+      
+                <li>
+                  <div class="mark-container">
+                    <div class="mark">
+                      <span>3</span>
+                    </div>
+                    <h6>Post requirements</h6>
+                  </div>
+                </li>
+      
+                <li>
+                  <div class="mark-container">
+                    <div class="mark">
+                      <span>4</span>
+                    </div>
+                    <h6>Budget</h6>
+                  </div>
+                </li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+          <form class="form-brand" abide novalidate>
+      	
+      	<div class="section_form_container">
+      		<div class="section_campaign-details active">
+      		
+      		  <div class="row padding-min" id="dataBrand">
+      		
+      		    <div class="columns small-12 large-4">
+      		      <div class="set-logo">
+      		        
+      		        <div class="set-logo_container" id="cropit-logo">
+      		          <div class="image-editor">
+      		            <div class="cropit-preview"></div>
+      		              <input type="file" id="set-logo-input" class="cropit-image-input inputfile">
+      		              <label class="label-logo-upload" for="set-logo-input" keypress></label>
+      		
+      		              <input type="range" class="cropit-image-zoom-input">
+      		              <div class="confirm-logo"></div>
+      		
+      		              <input id="data-logo" type="hidden" name="brandLogo" value="">
+      		            </div>
+      		        </div>
+      		        
+      		      </div>
+      		    </div>
+      		
+      		    <div class="columns small-12 large-8">
+      		      <input class="" type="text" name="brandName" id="brandName" value="" placeholder="Brand name">
+      		      <input class="" type="text" name="CampaignName" id="campaignName" value="" placeholder="Campaign name">
+      		     
+      		
+      		      <div class="ex-portada">
+      		        <img src="http://via.placeholder.com/250x250/fff/fff" alt="" class="placeholder-logo">
+      		        <!-- background-image set with the upload file -->
+      		        <img class="background-image" src="https://static.pexels.com/photos/573897/pexels-photo-573897.jpeg" alt="">
+      		        <h2>Brand name</h2>
+      		        <h5>Campaign name</h5>
+      		      </div>
+      		      
+      		      <input type="file" class="campaign-image inputfile" name="campaignImg" id="campaignImg" value="" placeholder="">
+      		      <input type="hidden" id="campaignImgData" name="campaignImgData" value="">
+      		      <label class="label-campaign-img" for="campaignImg"><i>+</i>upload campaign image</label>
+      		    </div>
+      		  </div>
+      		  
+      		  <div class="row padding-min" id="platforms">
+      		    <div class="columns small-12">
+      		      <div class="title">
+      		        <h4>Platform</h4>
+      		      </div>
+      		    </div>
+      		    <div class="columns small-3">
+      		      <div class="img-container active">
+      		        <img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-08-128.png" alt="instagram">
+      		        <input type="hidden" name="instach" value="instagram">
+      		      </div>
+      		    </div>
+      		    <div class="columns small-3">
+      		      <div class="img-container">
+      		        <img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-13-128.png" alt="twitter">
+      		        <div class="msg"><p>Soon you will be able to use this platform!</p></div>
+      		        <input type="hidden" name="instach" value="">
+      		      </div>
+      		    </div>
+      		    <div class="columns small-3">
+      		      <div class="img-container">
+      		        <img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-02-128.png" alt="facebook">
+      		        <div class="msg"><p>Soon you will be able to use this platform!</p></div>
+      		        <input type="hidden" name="instach" value="">
+      		      </div>
+      		    </div>
+      		    <div class="columns small-3">
+      		      <div class="img-container">
+      		        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-128.png" alt="youtube">
+      		        <div class="msg"><p>Soon you will be able to use this platform!</p></div>
+      		        <input type="hidden" name="instach" value="">
+      		      </div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding-min" id="productRequired">
+      		    <div class="columns small-12">
+      		      <h4>is the product display required</h4>
+      		    </div>
+      		    <div class="columns small-12 padding--min">
+      		      <div class="product-required-select">
+      		        <div class="help">Yes</div>
+      		        <input type="radio" name="displayRequired" id="isRequired" value="Yes" placeholder="" checked="">
+      		        <label for="isRequired"></label>
+      		      </div>
+      		
+      		      <div class="product-required-select">
+      		        <div class="help">No</div>
+      		        <input type="radio" name="displayRequired" id="noRequired" value="No" placeholder="">
+      		        <label for="noRequired"></label>
+      		      </div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding-min" id="describeYourCampaign">
+      		    <div class="columns small-12">
+      		      <div class="title-container">
+      		        <h4 class="input-required">describe your campaign idea</h4>
+      		      </div>
+      		      <textarea class="required input_check" name="describe" id="" placeholder="Describe your company..." cols="30" rows="10" required></textarea>
+      		      <span class="form-error">I'm required!</span>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="section_button_container">
+      		    <!-- <div class="section_button"> -->
+      		      <div class="row section_button">
+      		        <div class="columns small-12">
+      		          <div class="btn-container">
+      		            <button type="" class="save">save</button>
+      		          </div>
+      		          <div class="btn-container">
+      		            <a href="" class="button secondary" title="">back</a>
+      		          </div>
+      		          <div class="btn-container">
+      		            <a href="" class="button primary" title="" type="">next</a>
+      		          </div>
+      		        </div>
+      		      </div>
+      		    <!-- </div> -->  </div>
+      		</div>		<div class="section_creators-profile">
+      		  <div class="row padding-min creators__profile">
+      		    <div class="columns small-12 padding--min">
+      		      <h4>creators profile</h4>
+      		    </div>
+      		
+      		    <div class="columns small-4">
+      		      <h4 class="sub">gender</h4>
+      		      <div class="gender">
+      		        <div class="male-selection active">
+      		          <div class="overlay"></div>
+      		          <img class="ok-check" src="assets/img/check-ok.png" alt="selected">
+      		          <img src="assets/img/ic-male.png" alt="male">
+      		        </div>
+      		        <div class="female-selection">
+      		          <div class="overlay"></div>
+      		          <img class="ok-check" src="assets/img/check-ok.png" alt="selected">
+      		          <img src="assets/img/ic-female.png" alt="female">
+      		        </div>
+      		        <div class="female-selection">
+      		          <div class="overlay"></div>
+      		          <img class="ok-check" src="assets/img/check-ok.png" alt="selected">
+      		          <img src="assets/img/trans.png" alt="trans">
+      		        </div>
+      		
+      		        <input id="ch-gender" type="hidden" name="" value="">
+      		      </div>
+      		    </div>
+      		
+      		    <div class="columns small-8">
+      		      <h4 class="sub">age</h4>
+      		      <!-- <input type="range" name="" value="" placeholder=""> -->
+      		      <input type="hidden" class="slider-input" name="age_range" value="0" />
+      		      <input type="hidden" class="slider-input" name="age_to" value="100" />
+      		      <div class="range-slider"></div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding-min creators__category" data-equalizer>
+      		    <div class="columns small-12 padding--min">
+      		      <h4>creators category</h4>
+      		    </div>
+      		
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Fashion & <br> Beauty</h6>
+      		        <div class="img-container">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-fashion.png" alt="fashion">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catFashion" value="catFashion">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Food & <br>  Drinks</h6>
+      		        <div class="img-container">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-food.png" alt="food">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catDrinks" value="catDrinks">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Health & <br>  Fitness</h6>
+      		        <div class="img-container alt">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-health.png" alt="health">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catHealth" value="catHealth">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Lifestyle</h6>
+      		        <div class="img-container alt">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-lifestyle.png" alt="lifestyle">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catLife" value="catLife">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Travel</h6>
+      		        <div class="img-container">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-travel.png" alt="travel">
+      		        </div>
+      		      </div>
+      		       <input type="checkbox" name="catTravel" value="catTravel">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Sports</h6>
+      		        <div class="img-container alt">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-sports.png" alt="sports">
+      		        </div>
+      		      </div>
+      		       <input type="checkbox" name="catSports" value="catSports">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Gamming</h6>
+      		        <div class="img-container">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-gamming.png" alt="gamming">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catGaming" value="catGaming">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Home decor <br>  design</h6>
+      		        <div class="img-container">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-home.png" alt="home">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catHome" value="catHome">
+      		    </div>
+      		    
+      		    <div class="columns small-4 large-3 creators__category-container last" data-equalizer-watch>
+      		      <div class="category-item">
+      		        <h6>Other</h6>
+      		        <div class="img-container">
+      		          <div class="selected"></div>
+      		          <img src="assets/img/cat-other.png" alt="other">
+      		        </div>
+      		      </div>
+      		      <input type="checkbox" name="catOther" value="catOther">
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding-min creators__req">
+      		    <div class="columns small-12 padding--min">
+      		
+      		      <h4>creators requirements</h4>
+      		      <textarea class="" name="requirements" id="" placeholder="Describe your ideal content creator profile..." cols="30" rows="10" required></textarea>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row creators__find-perfect">
+      		    <div class="columns small-6">
+      		      <div class="find-the-perfect">
+      		        <input type="radio" name="xh" id="find-the-perfect" checked="">
+      		        <label for="find-the-perfect"></label>
+      		        <div class="help">Please find the perfect creator for my campaign</div>
+      		      </div>
+      		    </div>
+      		
+      		    <div class="columns small-6">
+      		      <div class="find-the-perfect">
+      		        <input type="radio" name="xh" id="let-me-approve">
+      		        <label for="let-me-approve"></label>
+      		        <div class="help">Let me approve my own creators</div>
+      		      </div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="section_button_container">
+      		    <!-- <div class="section_button"> -->
+      		      <div class="row section_button">
+      		        <div class="columns small-12">
+      		          <div class="btn-container">
+      		            <button type="" class="save">save</button>
+      		          </div>
+      		          <div class="btn-container">
+      		            <a href="" class="button secondary" title="">back</a>
+      		          </div>
+      		          <div class="btn-container">
+      		            <a href="" class="button primary" title="" type="">next</a>
+      		          </div>
+      		        </div>
+      		      </div>
+      		    <!-- </div> -->  </div>
+      		</div>		<div class="section_post-requirements">
+      		  <div class="row padding--min">
+      		    <div class="columns small-12">
+      		      <div class="post-requirements">
+      		        <h4 class="input-required">post requirements</h4>
+      		        <textarea class="required input_check" name="requirements" id="" placeholder="Describe your ideal content..." cols="30" rows="10" required></textarea>
+      		        <span class="form-error">I'm required!</span>
+      		      </div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding--min">
+      		    <div class="columns small-12">
+      		      <h4>add visual examples</h4>
+      		    </div>
+      		
+      		    <div class="columns small-12">
+      		      <div class="visual-examples">
+      		
+      		        <div class="visual-examples_item">
+      		          <input class="visual-example-file inputfile" id="input_image1" type="file">
+      		          <img class="visual-example-preview" id="campaign_image1" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden" name="campaign_image1">
+      		          <div class="magnifiyng"></div>
+      		        </div>
+      		        
+      		        <div class="visual-examples_item">
+      		          <input class="visual-example-file inputfile" id="input_image2" type="file">
+      		          <img class="visual-example-preview" id="campaign_image2" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden" name="campaign_image2">
+      		          <div class="magnifiyng"></div>
+      		        </div>
+      		        
+      		        <div class="visual-examples_item">
+      		          <input class="visual-example-file inputfile" id="input_image3" type="file">
+      		          <img class="visual-example-preview" id="campaign_image3" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden" name="campaign_image3">
+      		          <div class="magnifiyng"></div>
+      		        </div>
+      		        
+      		        <div class="visual-examples_item">
+      		          <input class="visual-example-file inputfile" id="input_image4" type="file">
+      		          <img class="visual-example-preview" id="campaign_image4" src="assets/img/placeholder.png" height="200" alt="Image preview...">
+      		          <input type="hidden" name="campaign_image4">
+      		          <div class="magnifiyng"></div>
+      		        </div>
+      		      </div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding--min">
+      		    <div class="columns small-12 large-6 padding--min">
+      		      <h4 class="input-required">Post message</h4>
+      		      <textarea class="required input_check" name="describe" id="" placeholder="Describe your company..." cols="30" rows="10" required></textarea>
+      		      <span class="form-error">I'm required!</span>
+      		    </div>
+      		    <div class="columns small-12 large-3 hashtag-container padding--min">
+      		      <h4 class="input-required">Hashtag</h4>
+      		      <textarea class="required input_check hashtag_area" name="describe" id="" placeholder="Describe your company..." cols="30" rows="10" required></textarea>
+      		      <span class="form-error">I'm required!</span>
+      		    </div>
+      		    <div class="columns small-12 large-3 mentions-container padding--min">
+      		      <h4 class="input-required">Mentions</h4>
+      		      <textarea class="required input_check mentions_area" name="describe" id="" placeholder="Describe your company..." cols="30" rows="10" required></textarea>
+      		      <span class="form-error">I'm required!</span>
+      		    </div>
+      		  </div>
+      		  
+      		  <div class="row padding--min">
+      		    <div class="column small-12">
+      		      <h4 class="input-required">receive sumission until</h4>
+      		    </div>
+      		    <div class="column small-12">
+      		      <input data-toggle="datepicker">
+      		      <input type="hidden" name="request_submit_date">
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding--min">
+      		    <div class="column small-12 padding--min">
+      		      <h4 class="input-required">preferences</h4>
+      		    </div>
+      		
+      		    <div class="column small-12 padding--min">
+      		      <h4 class="sub">Dates</h4>
+      		    </div>
+      		
+      		    <div class="column small-12" id="daysData">
+      		      
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="mon" data-pos="0" checked>
+      		        <label for="mon"></label>
+      		        <div class="help">mon</div>
+      		      </div>
+      		
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="tue" data-pos="1">
+      		        <label for="tue"></label>
+      		        <div class="help">tue</div>
+      		      </div>
+      		
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="wed" data-pos="2">
+      		        <label for="wed"></label>
+      		        <div class="help">wed</div>
+      		      </div>
+      		
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="thu" data-pos="3">
+      		        <label for="thu"></label>
+      		        <div class="help">thu</div>
+      		      </div>
+      		
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="fri" data-pos="4">
+      		        <label for="fri"></label>
+      		        <div class="help">fri</div>
+      		      </div>
+      		
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="sat" data-pos="5">
+      		        <label for="sat"></label>
+      		        <div class="help">sat</div>
+      		      </div>
+      		
+      		      <div class="radio-container">
+      		        <input type="checkbox" name="choose" id="sun" data-pos="6">
+      		        <label for="sun"></label>
+      		        <div class="help">sun</div>
+      		      </div>
+      		      
+      		      <input type="hidden" name="days_data">
+      		    </div>
+      		  </div>
+      		
+      		  <div class="row padding-min">
+      		    <div class="column small-12">
+      		      <h4 class="sub input-required">Hours</h4>
+      		    </div>
+      		
+      		    <div class="column small-12">
+      		      <div class="hours-container">
+      		        <img src="" alt="">
+      		        <input type="hidden" name="post_hours" class="slider-input-hours" value="23" />
+      		        <div class="range-hours"></div>
+      		      </div>
+      		    </div>
+      		  </div>
+      		
+      		  <div class="section_button_container">
+      		    <!-- <div class="section_button"> -->
+      		      <div class="row section_button">
+      		        <div class="columns small-12">
+      		          <div class="btn-container">
+      		            <button type="" class="save">save</button>
+      		          </div>
+      		          <div class="btn-container">
+      		            <a href="" class="button secondary" title="">back</a>
+      		          </div>
+      		          <div class="btn-container">
+      		            <a href="" class="button primary" title="" type="">next</a>
+      		          </div>
+      		        </div>
+      		      </div>
+      		    <!-- </div> -->  </div>
+      		
+      		</div>		<div class="section_budget">
+      			<div class="row padding-min">
+      				<div class="column small-12">
+      					<h4>campaign budget</h4>
+      				</div>
+      				<div class="columns small-12">
+      					<div class="input-group">
+      					  <span class="input-group-label">$</span>
+      					  <input class="input-group-field input_check" placeholder="0.00" id="exampleNumberInput" type="number" required pattern="number"/>
+      					</div>
+      					<span class="form-error">I'm required</span>
+      				</div>
+      			</div>
+      		
+      			<div class="row padding-min">
+      				<div class="column small-12">
+      					<h4>max pay per cost</h4>
+      				</div>
+      				<div class="columns small-12">
+      					<label>
+      				        <input type="number" placeholder="Optional" aria-describedby="exampleHelpText" required pattern="number">
+      			      	</label>
+      				</div>
+      			</div>
+      		
+      			<div class="section_button_container">
+      			  <!-- <div class="section_button"> -->
+      			    <div class="row section_button">
+      			      <div class="columns small-12">
+      			        <div class="btn-container">
+      			          <button type="" class="save">save</button>
+      			        </div>
+      			        <div class="btn-container">
+      			          <a href="" class="button secondary" title="">back</a>
+      			        </div>
+      			        <div class="btn-container">
+      			          <a href="" class="button primary" title="" type="submit">submit</a>
+      			        </div>
+      			      </div>
+      			    </div>
+      			  <!-- </div> -->	</div>
+      		
+      			<input type="hidden" name="id_val" id="id_val">
+      		
+      		</div>	</div>  
+        
+      </form>
+    
+    </div> <!-- end container -->
+    
+
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/jquery.cropit.js"></script>
+    <script src="assets/lib/jquery.tag-editor.min.js"></script>
+    <script src="assets/lib/jquery.caret.min.js"></script>
+    <script src="assets/lib/datepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>
