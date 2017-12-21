@@ -1,12 +1,11 @@
-.section_creators-profile{
-	display: none; 
+#section_creators-profile{ 
 	margin-bottom: rem-calc(30);
 
 	&.active{
 		display: block;
 	}
 	
-	.creators__profile{
+	#creators__profile{
 		.sub{
 			margin-bottom: rem-calc(18);
 			font-size: rem-calc(12);
@@ -14,12 +13,38 @@
 		}
 
 		.gender{
-			
 			& > div{
 				position: relative;
 				display: inline-block;
 				margin-right: rem-calc(12);
 				cursor: pointer;
+				
+				&:first-of-type{
+					&:before{
+						content: "Male";
+					}
+				}
+
+				&:nth-of-type(2){
+					&:before{
+						content: "Female";
+					}
+				}
+
+				&:last-of-type{
+					&:before{
+						content: "Both";
+					}
+				}
+
+				&:before{
+					position: absolute;
+					bottom: -22px;
+					width: 100%;
+					text-align: center;
+					font-size: rem-calc(12);
+					color: $dark-gray;
+				}
 
 				img{
 					max-width: rem-calc(60);
@@ -27,15 +52,16 @@
 				}
 
 				.overlay{
-					display: none;
 					position: absolute;
 					z-index: 9;
 					width: 100%;
 					height: 100%;
+					transform: scale(0);
 					border-radius: 50%;
 					background-image: url('../img/blue-btn.png');
 					background-size: cover;
-					opacity: .2;
+					opacity: 0;
+					transition: transform .4s ease, opacity .2s ease-in;
 				}
 
 				img.ok-check{
@@ -50,7 +76,8 @@
 
 				&.active{
 					.overlay{
-						display: block;
+						transform: scale(1);
+						opacity: .2;
 					}
 
 					img.ok-check{
@@ -61,7 +88,7 @@
 		}
 
 		.slider-container{
-			margin-top: rem-calc(65);
+			margin-top: rem-calc(35);
 		}
 	}
 
@@ -99,13 +126,13 @@
 				
 				.selected{
 					position: absolute;
-					right: -34px;
+					right: -14px;
 					top: -14px;
-					width: rem-calc(50);
-					height: rem-calc(50);
+					width: rem-calc(33);
+					height: rem-calc(33);
 					background-color: lighten($light-gray,10);
 					border-radius: 50%;
-					background-image: url('../img/ok-alt.png');
+					background-image: url('../img/check-ok.png');
 					background-size: 70%;
 					background-position: center;
 					background-repeat: no-repeat;
@@ -117,9 +144,10 @@
 
 			&:hover{
 				.selected{
-					background-color: $light-gray;
 					opacity: 1;
 					transform: scale(1);
+					opacity: .2;
+					background-blend-color: multiply;
 				}
 			}
 
@@ -133,9 +161,6 @@
 			}
 
 		}
-	}
-
-	.creators__req{
 	}
 
 	.creators__find-perfect{

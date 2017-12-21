@@ -86,7 +86,7 @@
 
 		.help{
 			display: inline-block;
-			font-weight: 500;
+			font-weight: 300;
 			text-transform: capitalize;
 		}
 	}
@@ -95,6 +95,20 @@
 		font-size: rem-calc(14);
 		font-weight: 500;
 		text-transform: capitalize;
+	}
+
+	.hours-container{
+		p{
+			margin-top: rem-calc(8);
+			font-size: rem-calc(11);
+			color: $black;
+
+			span{
+				font-weight: 800;
+			}
+
+		}
+		
 	}
 }
 

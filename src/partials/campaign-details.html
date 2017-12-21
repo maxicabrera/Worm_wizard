@@ -1,110 +1,164 @@
-<div class="section_campaign-details active">
+<div class="row active" id="section_campaign-details">
+  <div class="small-12 columns" id="dataBrand">
+    <div class="row">
+      <div class="small-4 columns">
 
-  <div class="row padding-min" id="dataBrand">
-
-    <div class="columns small-12 large-4">
-      <div class="set-logo">
-        
-        <div class="set-logo_container" id="cropit-logo">
-          <div class="image-editor">
-            <div class="cropit-preview"></div>
-              <input type="file" id="set-logo-input" class="cropit-image-input inputfile">
-              <label class="label-logo-upload" for="set-logo-input" keypress></label>
-
-              <input type="range" class="cropit-image-zoom-input">
-              <div class="confirm-logo"></div>
-
-              <input id="data-logo" type="hidden" name="brandLogo" value="">
+        <div class="brand_logo-container">
+          <h4 class="input-required">Brand Logo</h4>
+          <div class="logo-container">
+            <div class="ver">
+              <img src="" alt="" class="ver-img" id="verImg">
             </div>
+            
+            <button class="button" data-open="editModal" keypress><img src="assets/img/edit-lightbtn.png" alt="edit"></button>
+          </div>
+
+          <div class="medium reveal" id="editModal" data-reveal>
+            <div class="image-editor">
+              <h4>Upload your logo</h4>
+              <div class="contain">
+                <div class="cropit-preview"></div>
+
+                <input type="file" id="set-logo-input" class="cropit-image-input inputfile img_check">
+                <label class="label-logo-upload" for="set-logo-input" keypress></label>
+                <span class="form-error">I'm required!</span>
+              </div>
+              
+              <div class="controller">
+                <input type="range" class="cropit-image-zoom-input">
+                <button class="button primary export"></button>
+              </div>
+            </div>
+          </div>
         </div>
-        
+
+        <div class="brand_name-container">
+          <h4 class="input-required">Brand Name</h4>
+          <label>
+            <input type="text" class="" id="brand_name" placeholder="Worm media" pattern="text" required>
+            <span class="form-error">I'm required.</span>
+          </label>
+        </div>
+
+        <div class="campaign_name-container">
+          <h4 class="input-required">Campaign Name</h4>
+          <label>
+            <input type="text" class="" id="campaign_name" placeholder="My first campaign" pattern="text" required>
+            <span class="form-error">I'm required.</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="small-8 columns">
+        <h4 class="input-required">Preview</h4>
+        <h6>Here is were you can view how your campaign is being settle</h6>
+        <div class="portada">
+            <img class="portada-image" id="portadaImage" src="http://via.placeholder.com/250x250/fff/fff">
+            <input type="file" class="img_check inputfile" name="campaign_cover" id="campaignImg" class="campaign-image inputfile">
+            <label class="label-upload-campaign" for="campaignImg" keypress></label>
+            <span class="form-error">I'm required!</span>
+
+            <div class="logo-container">
+              <div class="ver">
+                <img src="" alt="" class="ver-img">
+              </div>
+            </div>
+
+            <h2>Brand Name</h2>
+            <h5>Campaign Name</h5>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="columns small-12 large-8">
-      <input class="" type="text" name="brandName" id="brandName" value="" placeholder="Brand name">
-      <input class="" type="text" name="CampaignName" id="campaignName" value="" placeholder="Campaign name">
-     
+  <div class="small-12 columns padding-min" id="platforms">
+    <div class="row">
+      <div class="columns small-12">
+        <div class="title">
+            <h4 class="input-required">Platform</h4>
+          </div>
+      </div>
 
-      <div class="ex-portada">
-        <img src="http://via.placeholder.com/250x250/fff/fff" alt="" class="placeholder-logo">
-        <!-- background-image set with the upload file -->
-        <img class="background-image" src="https://static.pexels.com/photos/573897/pexels-photo-573897.jpeg" alt="">
-        <h2>Brand name</h2>
-        <h5>Campaign name</h5>
+      <div class="columns small-3">
+          <div class="img-container active">
+            <!-- <img src="../../assets/images/newtheme/img/plat_instagram.png" alt="instagram"> -->
+            <img src="assets/img/plat_instagram.png" alt="instagram">
+          </div>
+      </div>
+
+      <div class="columns small-3">
+          <div class="img-container">
+            <!-- <img src="../../assets/images/newtheme/img/plat_twitter.png" alt="twitter"> -->
+            <img src="assets/img/plat_twitter.png" alt="twitter">
+            <div class="msg"><p>Coming soon!</p></div>
+          </div>
+      </div>
+
+      <div class="columns small-3">
+          <div class="img-container">
+            <!-- <img src="../../assets/images/newtheme/img/plat_facebook.png" alt="facebook"> -->
+            <img src="assets/img/plat_facebook.png" alt="facebook">
+            <div class="msg"><p>Coming soon!</p></div>
+          </div>
+      </div>
+
+      <div class="columns small-3">
+          <div class="img-container">
+            <!-- <img src="../../assets/images/newtheme/img/plat_youtube.png" alt="youtube"> -->
+            <img src="assets/img/plat_youtube.png" alt="youtube">
+            <div class="msg"><p>Coming soon!</p></div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 columns padding-min" id="productRequired">
+    <div class="row">
+      <div class="small-12 columns">
+        <h4 class="input-required">is the product display required</h4>
+        <h6>Will the content creators need to exhibit your product?</h6>
       </div>
       
-      <input type="file" class="campaign-image inputfile" name="campaignImg" id="campaignImg" value="" placeholder="">
-      <input type="hidden" id="campaignImgData" name="campaignImgData" value="">
-      <label class="label-campaign-img" for="campaignImg"><i>+</i>upload campaign image</label>
-    </div>
-  </div>
-  
-  <div class="row padding-min" id="platforms">
-    <div class="columns small-12">
-      <div class="title">
-        <h4>Platform</h4>
-      </div>
-    </div>
-    <div class="columns small-3">
-      <div class="img-container active">
-        <img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-08-128.png" alt="instagram">
-        <input type="hidden" name="instach" value="instagram">
-      </div>
-    </div>
-    <div class="columns small-3">
-      <div class="img-container">
-        <img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-13-128.png" alt="twitter">
-        <div class="msg"><p>Soon you will be able to use this platform!</p></div>
-        <input type="hidden" name="instach" value="">
-      </div>
-    </div>
-    <div class="columns small-3">
-      <div class="img-container">
-        <img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-02-128.png" alt="facebook">
-        <div class="msg"><p>Soon you will be able to use this platform!</p></div>
-        <input type="hidden" name="instach" value="">
-      </div>
-    </div>
-    <div class="columns small-3">
-      <div class="img-container">
-        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-128.png" alt="youtube">
-        <div class="msg"><p>Soon you will be able to use this platform!</p></div>
-        <input type="hidden" name="instach" value="">
+      <div class="small-12 columns">
+        <div class="product-required-select">
+          <div class="help">Yes</div>
+          <!-- <input type="radio" name="campaign_like" id="isRequired" value="campaign_like" <?php if(isset($select_data[0])){if($select_data[0]['campaign_like']=='campaign_like'){echo 'checked';}else{echo '';}}else{echo 'checked';}?> > -->
+          <input type="radio" name="campaign_like" id="isRequired" value="campaign_like" checked >
+          <label for="isRequired"></label>
+        </div>
+        <div class="product-required-select">
+          <div class="help">No</div>
+          <!-- <input type="radio" name="campaign_like" id="noRequired" value="campaign_unlike" <?php if(isset($select_data[0])){if($select_data[0]['campaign_like']=='campaign_unlike'){echo 'checked';}else{echo '';}}else{echo '';}?> > -->
+          <input type="radio" name="campaign_like" id="noRequired" value="campaign_unlike" >
+          <label for="noRequired"></label>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="row padding-min" id="productRequired">
-    <div class="columns small-12">
-      <h4>is the product display required</h4>
-    </div>
-    <div class="columns small-12 padding--min">
-      <div class="product-required-select">
-        <div class="help">Yes</div>
-        <input type="radio" name="displayRequired" id="isRequired" value="Yes" placeholder="" checked="">
-        <label for="isRequired"></label>
+  <div class="small-12 columns padding-min" id="describeYourCampaign">
+    <div class="row">
+      <div class="small-12 columns">
+        <h4 class="input-required">describe your campaign</h4>
       </div>
 
-      <div class="product-required-select">
-        <div class="help">No</div>
-        <input type="radio" name="displayRequired" id="noRequired" value="No" placeholder="">
-        <label for="noRequired"></label>
+      <div class="small-12 columns">
+        <label>
+          <textarea class="" id="campaign_idea" name="campaign_idea" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque et a veritatis obcaecati. Beatae ea, vero debitis? Voluptas consequatur vitae at iure sequi, ut, fuga et ipsam eveniet repellat minima non eum delectus, possimus atque tempore quasi reiciendis assumenda amet..." cols="20" rows="5" required></textarea>
+          <span class="form-error">I'm required.</span>
+        </label>
       </div>
     </div>
   </div>
 
-  <div class="row padding-min" id="describeYourCampaign">
-    <div class="columns small-12">
-      <div class="title-container">
-        <h4 class="input-required">describe your campaign idea</h4>
-      </div>
-      <textarea class="required input_check" name="describe" id="" placeholder="Describe your company..." cols="30" rows="10" required></textarea>
-      <span class="form-error">I'm required!</span>
-    </div>
-  </div>
+  {{> button_next}}
 
-  <div class="section_button_container">
-    {{> button_next}}  
-  </div>
+  <!-- INPUT HIDDEN  -->
+    <input type="hidden" id="data-logo" name="campaign_icon" value="">
+    <input type="hidden" id="campaign_icon_Updated" name="campaign_icon_Updated" value="no">
+
+    <input type="hidden" id="campaign_cover" name="campaign_cover" value="">
+    <input type="hidden" id="campaign_cover_Updated" name="campaign_cover_Updated" value="no">
 </div>
+
+

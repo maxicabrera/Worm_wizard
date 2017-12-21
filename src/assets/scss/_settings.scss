@@ -57,6 +57,7 @@ $red: #ff5844;
 $carmesi: #ff3b6d;
 $pink: #ff3b6d;
 $green-water: #00c2b4;
+$gradient-red: linear-gradient(to bottom, #ff0384, #ff710f), linear-gradient(#d8d8d8, #d8d8d8);
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
@@ -120,7 +121,7 @@ $header-sizes: (
     'h3': 19,
     'h4': 18,
     'h5': 17,
-    'h6': 16,
+    'h6': 14,
   ),
   medium: (
     'h1': 48,
@@ -128,7 +129,7 @@ $header-sizes: (
     'h3': 31,
     'h4': 25,
     'h5': 20,
-    'h6': 16,
+    'h6': 14,
   ),
 );
 $header-color: $dark-gray;
@@ -552,15 +553,14 @@ $titlebar-icon-spacing: 0.25rem;
 // 35. Tooltip
 // -----------
 
-$has-tip-font-weight: $global-weight-bold;
-$has-tip-border-bottom: dotted 1px $dark-gray;
-$tooltip-background-color: $black;
-$tooltip-color: $white;
-$tooltip-padding: 0.75rem;
-$tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
+$has-tip-font-weight: $global-weight-normal;
+$tooltip-background-color: $white;
+$tooltip-radius: 8px;
+$tooltip-color: $black;
+$tooltip-padding: 1.25rem;
+$tooltip-font-size: 10px;
+$tooltip-pip-width: 1.25rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
-$tooltip-radius: $global-radius;
 
 // 36. Top Bar
 // -----------

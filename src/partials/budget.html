@@ -6,7 +6,7 @@
 		<div class="columns small-12">
 			<div class="input-group">
 			  <span class="input-group-label">$</span>
-			  <input class="input-group-field input_check" placeholder="0.00" id="exampleNumberInput" type="number" required pattern="number"/>
+			  <input class="input-group-field input_check" value="<?php if( isset($select_data[0]) ) { echo $select_data[0]['campaign_budget'];}else{echo '';}?>" placeholder="0.00" id="exampleNumberInput" name="campaign_budget" type="number" required pattern="number"/>
 			</div>
 			<span class="form-error">I'm required</span>
 		</div>
@@ -18,15 +18,29 @@
 		</div>
 		<div class="columns small-12">
 			<label>
-		        <input type="number" placeholder="Optional" aria-describedby="exampleHelpText" required pattern="number">
+		        <input type="number" value="<?php if( isset($select_data[0]) ) { echo $select_data[0]['pay_per_like'];}else{echo'';} ?>" placeholder="Optional" name="pay_per_like" aria-describedby="exampleHelpText" required pattern="number">
 	      	</label>
 		</div>
 	</div>
-
+	
 	<div class="section_button_container">
-	  {{> button}}  
+	    <div class="row section_button">
+	      <div class="columns small-12">
+	        <div class="btn-container">
+	          <button type="" name="campaign_submit" class="save">save</button>
+	        </div>
+	        <div class="btn-container">
+	          <a href="" class="button secondary" title="">back</a>
+	        </div>
+	        <div class="btn-container">
+      			  <a href="<?php //echo base_url().'admin/addcampaign';?>">
+        				<button type="submit" name="campaign_submit" class="request_approval submitbtn campaign_submit primary" method="post">SUBMIT</button>
+      			  </a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
-	<input type="hidden" name="id_val" id="id_val">
-
+	<input type="hidden" name="id_val" id="id_val">		
 </div>

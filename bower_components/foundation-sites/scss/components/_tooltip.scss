@@ -16,7 +16,7 @@ $has-tip-border-bottom: dotted 1px $dark-gray !default;
 
 /// Default color of the tooltip background.
 /// @type Color
-$tooltip-background-color: $black !default;
+$tooltip-background-color: $light-gray !default;
 
 /// Default color of the tooltip font.
 /// @type Color
@@ -24,7 +24,7 @@ $tooltip-color: $white !default;
 
 /// Default padding of the tooltip background.
 /// @type Number
-$tooltip-padding: 0.75rem !default;
+$tooltip-padding: 1.75rem !default;
 
 /// Default font size of the tooltip text. By default, we recommend a smaller font size than the body copy.
 /// @type Number
@@ -43,11 +43,14 @@ $tooltip-pip-height: $tooltip-pip-width * 0.866 !default;
 $tooltip-radius: $global-radius !default;
 
 @mixin has-tip {
-  border-bottom: $has-tip-border-bottom;
+  border-radius: 50%;
+  font-size: 8px;
+  color: white;
   font-weight: $has-tip-font-weight;
   position: relative;
   display: inline-block;
-  cursor: help;
+  outline: 0;
+  cursor: pointer;
 }
 
 @mixin tooltip {
@@ -58,8 +61,9 @@ $tooltip-radius: $global-radius !default;
   position: absolute;
   z-index: 10;
   top: calc(100% + #{$tooltip-pip-height});
-  max-width: 10rem !important;
+  max-width: 12rem !important;
   border-radius: $tooltip-radius;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
 
   &::before {
     @include css-triangle($tooltip-pip-width, $tooltip-background-color, up);

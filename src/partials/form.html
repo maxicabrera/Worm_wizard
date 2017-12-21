@@ -1,10 +1,15 @@
-<form class="form-brand" abide novalidate>
-	
-	<div class="section_form_container">
-		{{> campaign-details}}
-		{{> creators-profile}}
-		{{> post-requirements}}
-		{{> budget}}
-	</div>  
-  
+<form class="form-brand" id="container-campaign-details" data-abide novalidate>
+  {{> campaign-details}}
+</form>
+
+<form style="display: none" class="form-brand" id="container-campaign-creatorProf" data-abide novalidate>
+  {{> creators-profile}}
+</form>
+
+<form style="display: none" class="form-brand" id="container-postReq" data-abide novalidate>
+  {{> post-requirements}}
+</form>
+
+<form style="display: none" class="form-brand" id="container-budget" method="post" data-abide novalidate>
+  {{> budget}}
 </form>

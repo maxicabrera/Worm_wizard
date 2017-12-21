@@ -18,13 +18,18 @@
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
     
-
+{{#ifpage 'index'}}
     <script src="{{root}}assets/lib/jquery.min.js"></script>
     <script src="{{root}}assets/lib/jquery.cropit.js"></script>
     <script src="{{root}}assets/lib/jquery.tag-editor.min.js"></script>
     <script src="{{root}}assets/lib/jquery.caret.min.js"></script>
     <script src="{{root}}assets/lib/datepicker.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
+{{/ifpage}}
+
+{{#ifpage 'started'}}
+    <script src="{{root}}assets/js/started/app.js"></script>
+{{/ifpage}}
 
   </body>
 </html>

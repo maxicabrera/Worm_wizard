@@ -1,119 +1,64 @@
-.section_campaign-details{
+#section_campaign-details{
 	display: none;
-	margin-bottom: rem-calc(30);
 
 	&.active{
 		display: block;
 	}
 	
 	#dataBrand{
-		.set-logo{
+		.brand_logo-container{
+			margin-bottom: rem-calc(30);
+		}
+
+		.brand_name-container{
+			margin-bottom: rem-calc(15);
+		}
+
+		.portada{
 			position: relative;
-			margin: auto;
-			text-align: center;
-		}
-		
-		.confirm-logo{
-			display: inline-block;
-			vertical-align: middle;
-			width: rem-calc(25);
-			height: rem-calc(25);
-			margin-left: rem-calc(8);
-			background-color: $light-gray;
-			border-radius: 50%;
-			background-image: url('../img/ok.png');
-			background-repeat: no-repeat;
-			background-size: 50%;
-			background-position: center;
-			cursor: pointer;
-		}
-
-		.cropit-preview{
-			width: rem-calc(210) !important;
-			height: rem-calc(210) !important;
-		}
-
-		.cropit-image-zoom-input{
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		.label-logo-upload{
-			position: absolute;
-			right: 70px;
-			bottom: 60px;
-			width: rem-calc(48);
-			height: rem-calc(48);
-			border-radius: 50%;
-			background-image: url(../img/edit-lightbtn.png);
-			background-color: $light-gray;
-			background-repeat: no-repeat;
-			background-position: center;
-
-			&.ok{
-				background-image: url(../img/ok.png);
-				background-size: 60%;
-			}
-		}
-
-		.label-campaign-img{
-			display: inline-block;
-			margin-top: rem-calc(12);
-			padding: 2px 18px 8px 18px;
-			background-color: $light-gray;
-			font-size: rem-calc(12);
-			font-weight: 600;
-			text-transform: uppercase;
-			color: $dark-gray;
-			text-align: center;
-			border-radius: rem-calc(8);
-			cursor: pointer;
-
-			i{
-				position: relative;
-				top: 4px;
-				margin-right: rem-calc(6);
-				font-size: rem-calc(28);
-				font-weight: 600;
-				font-style: inherit;
-			}
-		}
-
-		.ex-portada{
-			position: relative;
+			width: rem-calc(400);
+			height: rem-calc(450);
 			padding-bottom: rem-calc(30);
+			margin: rem-calc(50) auto;
 			overflow: hidden;
 			text-align: center;
-			background-color: rgba(10,10,10,.6);
-			
-			.background-image{
+			background-color: rgba($black,.6);
+			border-radius: 3px; 
+
+			.logo-container{
+				margin: rem-calc(50) auto;
+			}
+
+			.portada-image{
 				position: absolute;
 				top: 0;
 				left: 0;
-				z-index: -9;
 				width: 100%;
-				height: auto;
+				height: 100%;
+				z-index: -9;
 			}
 
-			.placeholder-logo{
-				width: rem-calc(250);
-				height: rem-calc(250);
-				border-radius: 50%;
-				border: 1px solid $light-gray;
-				transform: scale(.4);
-			}
-
-			.cropit-preview{
-				// margin: 85px auto 40px auto;
-				transform: scale(.4);
-
-				.cropit-preview-image-container{
-					cursor: default;
-				}
-			}
-
-			& > * {
+			h2,h5{
 				color: $white;
+				margin: 0;
+			}
+
+			h2{
+				font-weight: 700;
+			}
+
+			h5{
+				font-weight: 300;
+			}
+
+			.set-portada{
+				position: absolute;
+				z-index: 99;
+				top: 12px;
+				right: 12px;
+				padding: 12px;
+				border-radius: 50%;
+				background-color: #d8d8d8
 			}
 		}
 	}
@@ -124,6 +69,7 @@
 			cursor: pointer;
 			
 			img{
+				max-width: rem-calc(80);
 				border: 5px solid transparent;
 				border-radius: 10%;
 				box-shadow: 0 0 0 0 $medium-gray;
@@ -168,8 +114,4 @@
 			}
 		}
 	}
-
-	// #describeYourCampaign{
-		
-	// }
 }
